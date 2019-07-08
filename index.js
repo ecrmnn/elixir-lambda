@@ -15,6 +15,7 @@ const handle = async (event, context, callback) => {
     ].join(' && '),
     {
       encoding: 'utf8',
+      stdio: 'inherit',
     });
 
     const output = stdout.split('\n');
