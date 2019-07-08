@@ -1,6 +1,5 @@
 defmodule Lambda do
-  # Braps
-  def handle(_, _context) do    
+  def handle() do
     %{:elixir => System.version}
     |> Jason.encode!
     |> IO.puts
