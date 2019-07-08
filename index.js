@@ -6,8 +6,13 @@ const handle = async (event, context, callback) => {
   const eventString = `~s(${JSON.stringify(event)})`;
   const contextString = `~s(${JSON.stringify(context)})`;
 
+  const mixPath = '../bin/elixir/1.8.0/bin/mix';
+
   try {
-    const stdout = execSync(`cd src/ && mix run -e 'Lambda.handle(${eventString}, ${contextString})'`);
+    const stdout = execSync([
+      'cd src/',
+      `${mixPath} run -e 'Lambda.handle(${eventString}, ${contextString})'`,
+    ].join(' && '));
 
     const stdoutString = stdout.toString();
     const output = stdoutString.split('\n');
