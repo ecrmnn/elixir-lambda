@@ -1,0 +1,17 @@
+service: elixir-lambda
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-central-1
+  memorySize: 128
+  timeout: 15
+  environment:
+    APP_ENV: 'local'
+    SLS_DEBUG: "*"
+
+functions:
+  index:
+    handler: index.handle
+    events:
+      - http: GET /

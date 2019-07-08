@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - '8'
+
+branches:
+  only:
+  - master
+  - /((release|hotfix|feature)\/.*)/
+
+script:
+  - npm run eslint
+
+after_success:
+  - chmod 0777 bin/serverless-deployment.sh
+  - ./bin/serverless-deployment.sh

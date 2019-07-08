@@ -1,0 +1,20 @@
+{
+  "name": "elixir-lambda",
+  "version": "1.0.0",
+  "description": "Run Elixir on AWS Lambda (Proof of concept)",
+  "scripts": {
+    "eslint": "node_modules/.bin/eslint index.js",
+    "invoke": "./node_modules/.bin/serverless invoke local -f index"
+  },
+  "author": "Daniel Eckermann",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "serverless": "^1.46.1"
+  },
+  "dependencies": {
+    "execa": "^2.0.1"
+  }
+}
