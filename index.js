@@ -12,10 +12,12 @@ const handle = async (event, context, callback) => {
     const stdout = execSync([
       'cd src/',
       `${mixPath} run -e 'Lambda.handle()'`,
-    ].join(' && '));
+    ].join(' && '),
+    {
+      encoding: 'utf8',
+    });
 
-    const stdoutString = stdout.toString();
-    const output = stdoutString.split('\n');
+    const output = stdout.split('\n');
 
     if (output[0].includes('Compiling') && output[0].includes('(.ex)')) {
       output.shift();
