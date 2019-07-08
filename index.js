@@ -26,12 +26,14 @@ const handle = async (event, context, callback) => {
 
     callback(null, {
       statusCode: 200,
-      body: output.toString(),
+      // body: output.toString(),
+      body: 'ok',
     });
   } catch (error) {
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify(error),
+      // body: JSON.stringify(error),
+      body: 'error',
     });
   }
 };
