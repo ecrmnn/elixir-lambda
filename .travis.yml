@@ -9,6 +9,7 @@ branches:
   - /((release|hotfix|feature)\/.*)/
 
 script:
+  - npm t
   - npm run eslint
 
 after_success:

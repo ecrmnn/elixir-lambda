@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Run Elixir on AWS Lambda (Proof of concept)",
   "scripts": {
+    "test": "npm run mocha",
+    "mocha": "node_modules/.bin/mocha tests.js",
     "eslint": "node_modules/.bin/eslint index.js",
     "invoke": "./node_modules/.bin/serverless invoke local -f index"
   },
   "author": "Daniel Eckermann",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.0",
+    "mocha": "^6.1.4",
     "serverless": "^1.46.1"
   },
   "dependencies": {
