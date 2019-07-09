@@ -6,7 +6,7 @@ const handle = async (event, context, callback) => {
   // const eventString = `~s(${JSON.stringify(event)})`;
   // const contextString = `~s(${JSON.stringify(context)})`;
 
-  const binary = './src/_build/prod/rel/lambda/bin/lambda';
+  const binary = 'src/_build/prod/rel/lambda/bin/lambda';
 
   try {
     const stdout = execSync(`${binary} eval 'Lambda.handle'`, {
