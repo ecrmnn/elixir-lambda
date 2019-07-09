@@ -9,7 +9,7 @@ const handle = async (event, context, callback) => {
   const binary = 'src/_build/prod/rel/lambda/bin/lambda';
 
   try {
-    const stdout = execSync(`${binary} eval 'Lambda.handle'`, {
+    const stdout = execSync(`${binary} eval 'Lambda.handle()'`, {
       encoding: 'utf8',
     });
 
