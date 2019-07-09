@@ -15,11 +15,6 @@ const handle = async (event, context, callback) => {
 
     const output = stdout.split('\n');
 
-    if (output[0].includes('Compiling') && output[0].includes('(.ex)')) {
-      output.shift();
-      output.pop();
-    }
-
     callback(null, {
       statusCode: 200,
       body: output[0],
