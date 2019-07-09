@@ -1,0 +1,8 @@
+run_erl [75308] Tue Jul  9 09:22:31 2019
+Args before exec of shell:
+run_erl [75308] Tue Jul  9 09:22:31 2019
+argv[0] = sh
+run_erl [75308] Tue Jul  9 09:22:31 2019
+argv[1] = -c
+run_erl [75308] Tue Jul  9 09:22:31 2019
+argv[2] = exec "/Users/ecrmnn/Code/Random/lambda/src/_build/dev/rel/lambda/bin/lambda" "console" --  
