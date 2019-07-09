@@ -21,7 +21,8 @@ defmodule Lambda.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:jason, "~> 1.1"}
+      {:jason, "~> 1.1"},
+      {:distillery, "~> 2.0"}
     ]
   end
 end
