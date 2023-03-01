@@ -15,7 +15,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.0",
-    "mocha": "^6.1.4",
+    "mocha": "^6.2.3",
     "serverless": "^1.46.1"
   },
   "dependencies": {
